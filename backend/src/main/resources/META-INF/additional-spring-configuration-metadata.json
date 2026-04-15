@@ -1,0 +1,39 @@
+{
+  "properties": [
+    {
+      "name": "app.auth.jwt.secret",
+      "type": "java.lang.String",
+      "description": "The secret key used for signing JWT tokens."
+    },
+    {
+      "name": "app.auth.jwt.expiration",
+      "type": "java.lang.Long",
+      "description": "The expiration time for JWT tokens in milliseconds."
+    },
+    {
+      "name": "app.auth.cookie.name",
+      "type": "java.lang.String",
+      "description": "The name of the authentication cookie."
+    },
+    {
+      "name": "app.auth.cookie.secure",
+      "type": "java.lang.Boolean",
+      "description": "Whether the authentication cookie should be marked as secure."
+    },
+    {
+      "name": "app.auth.cookie.same-site",
+      "type": "java.lang.String",
+      "description": "The SameSite attribute for the authentication cookie (e.g., Lax, Strict, None)."
+    },
+    {
+      "name": "app.timetable.max-generation-ms",
+      "type": "java.lang.Long",
+      "description": "The maximum time allowed for timetable generation in milliseconds. If the generation process exceeds this time, it will be terminated to prevent resource exhaustion."
+    },
+    {
+      "name": "app.timetable.allow-cross-department-teachers",
+      "type": "java.lang.Boolean",
+      "description": "Whether to allow using teachers from other departments when the local pool of teachers is constrained during timetable generation."
+    }
+  ]
+}
